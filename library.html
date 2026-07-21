@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library</title>
+</head>
+<body>
+     <script language="javascript" type="text/javascript">
+        let book = {
+            title: "The Alchemist",
+            auther: "paulo coelho",
+            year: "1988",
+            getSummary: function() { 
+             return("The book " + this.title + " was written by " +  this.auther + " in " + this.year + " .")
+            
+            }
+        }
+        function printbookSummary(bookobj)
+        {
+            console.log(bookobj.getSummary());
+        }
+
+        printbookSummary(book);
+
+    </script>
+
+    
+</body>
+</html>
